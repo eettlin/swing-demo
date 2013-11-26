@@ -23,7 +23,7 @@ public class FirstSwingDemo {
 		JLabel lblInput = new JLabel("Please input your feelings");
 		pnlContent.add(lblInput);
 
-		JTextField txtInput = new JTextField(20);
+		final JTextField txtInput = new JTextField(20);
 		pnlContent.add(txtInput);
 
 		JButton btnInput = new JButton("Click me");
@@ -51,7 +51,7 @@ public class FirstSwingDemo {
 				// In Swing: ActionEvent e
 
 				// When we're in this method, some action has been performed.
-				System.out.println("Clicked");
+				txtInput.setText("Button was clicked (peace love joy)");
 			}
 		});
 
